@@ -15,7 +15,7 @@ Assuming you have the following HTML file
         </div>
     </div>
 
-## you can define the roles and permissions
+you can define the roles and permissions
 
     rbac.init({
         role: "administrator",
@@ -31,7 +31,7 @@ Assuming you have the following HTML file
                     "edit resources",
                     "add resources"
                 ],
-                inherits: ['guest']
+                inherits: ["guest"]
             },
             "guest": {
                 permissions: [
