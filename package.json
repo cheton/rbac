@@ -1,0 +1,15 @@
+{
+    "name": "rbac",
+    "version": "0.1.0",
+    "description": "Role-based access control",
+    "author": "Cheton Wu <cheton@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cheton/rbac.git"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "grunt": "0.3.x"
+    }
+}
