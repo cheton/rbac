@@ -4,31 +4,31 @@ Role-based access control with javascript (incl. jquery plugin)
 
 # Usage
 
-        rbac.init({
-            role: "administrator",
-            rules: {
-                "administrator": {
-                    permissions: [
-                        "delete resources"
-                    ],
-                    inherits: ["moderator"]
-                },
-                "moderator": {
-                    permissions: [
-                        "edit resources",
-                        "add resources"
-                    ],
-                    inherits: ['guest']
-                },
-                "guest": {
-                    permissions: [
-                        "view resources"
-                    ],
-                    inherits: []
-                }
+    rbac.init({
+        role: "administrator",
+        rules: {
+            "administrator": {
+                permissions: [
+                    "delete resources"
+                ],
+                inherits: ["moderator"]
+            },
+            "moderator": {
+                permissions: [
+                    "edit resources",
+                    "add resources"
+                ],
+                inherits: ['guest']
+            },
+            "guest": {
+                permissions: [
+                    "view resources"
+                ],
+                inherits: []
             }
-        }, function(rbac) {
-        });
+        }
+    }, function(rbac) {
+    });
 
 # License
 
