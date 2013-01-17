@@ -12,5 +12,13 @@
 <body>
 <body>
 <div id="qunit"></div>
+<div class="content">
+    <div data-rbac-roles="administrator,moderator">
+        <p>Only administrator or moderator have permission to view this page.</p>
+    </div>
+    <div data-rbac-permissions="delete resources">
+        <p>You have permission to delete resources.</p>
+    </div>
+</div>
 </body>
 </html>

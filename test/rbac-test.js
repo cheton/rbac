@@ -41,6 +41,11 @@ test("rbac test", function() {
         "add resources",
         "view resources"
     ]);
+    $(".content").rbac();
+    console.log("Your current role is " + rbac.role());
+    $(".content p").each(function() {
+        console.log($(this).text());
+    });
 
     // Moderator
     rbac.setRole("moderator");
@@ -57,6 +62,13 @@ test("rbac test", function() {
     deepEqual(rbac.permissions(), [
         "view resources"
     ]);
+
+    /*
+    console.log("rbac.role=" + rbac.role());
+    $(".content").rbac();
+    console.log($(".content").html());
+    */
+
 
     // Empty
     rbac.setRole("");
