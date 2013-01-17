@@ -4,6 +4,19 @@ Role-based access control with javascript (incl. jquery plugin)
 
 # Usage
 
+Assuming you have the following HTML file
+
+    <div class="content">
+        <div data-rbac-roles="administrator,moderator">
+            <p>Only administrator or moderator have permission to view this page.</p>
+        </div>
+        <div data-rbac-permissions="delete resources">
+            <p>You have permission to delete resources.</p>
+        </div>
+    </div>
+
+## you can define the roles and permissions
+
     rbac.init({
         role: "administrator",
         rules: {
@@ -28,6 +41,8 @@ Role-based access control with javascript (incl. jquery plugin)
             }
         }
     }, function(rbac) {
+        console.log('Your current role is ' + rbac.role());
+        $('.content').rbac(); // You can remove unauthorized elements from the DOM.
     });
 
 # License
