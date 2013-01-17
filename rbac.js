@@ -1,4 +1,4 @@
-// rbac, v0.1.0
+// rbac, v0.1.1
 // Copyright (c)2013 Cheton Wu (cheton).
 // Distributed under MIT license
 (function () {
@@ -31,15 +31,6 @@
             }
         }
         return result;
-    }
-    function contains(arr, obj) {
-        var i = arr.length;
-        while (i--) {
-            if (arr[i] === obj) {
-                return true;
-            }
-        }
-        return false;
     }
 
     function array_intersect(arr1) {
