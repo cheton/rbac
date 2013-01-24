@@ -1,6 +1,6 @@
 {
     "name": "rbac",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "Role-based access control",
     "author": "Cheton Wu <cheton@gmail.com>",
     "repository": {
@@ -10,6 +10,7 @@
     "dependencies": {
     },
     "devDependencies": {
-        "grunt": "0.3.x"
+        "grunt": "~0.4.0",
+        "grunt-contrib-qunit": "~0.1.1"
     }
 }
