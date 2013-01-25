@@ -1,4 +1,4 @@
-# Introduction
+# RBAC [![Build Status](https://secure.travis-ci.org/cheton/rbac.png?branch=master)](http://travis-ci.org/cheton/rbac)
 
 Role-based access control with javascript (incl. jquery plugin)
 
