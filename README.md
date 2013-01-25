@@ -2,7 +2,7 @@
 
 Role-based access control with javascript (incl. jquery plugin)
 
-# Usage
+# Getting Started
 
 Assuming you have the following HTML file
 
